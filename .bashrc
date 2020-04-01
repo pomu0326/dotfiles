@@ -30,3 +30,4 @@ alias ll='ls -al'
 
 ## Command Aliases
 alias vi='nvim'
+alias q='exit'
