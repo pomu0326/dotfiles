@@ -18,3 +18,6 @@ case "${OSTYPE}" in
 	;;
 esac
 alias ll='ls -al'
+
+## Command Aliases
+alias vi='nvim'
