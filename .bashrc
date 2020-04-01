@@ -1,7 +1,7 @@
 ## Check Dotfiles Changes
 cd ~/dotfiles
 if [ -z "$(git status | grep 'nothing to commit, working tree clean')" ]; then
-    echo $'\e[33m~/dotfiles: Pushされていない変更があります\e[0m'
+    echo $'\e[33m~/dotfiles: Commitされていない変更があります\e[0m'
     echo ""
     git status
 fi
