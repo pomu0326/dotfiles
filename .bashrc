@@ -17,7 +17,13 @@ mkdir -p $XDG_DATA_HOME
 
 ## Python Environments
 eval "$(pyenv init -)"
+function venv {
+    python3 -m venv venv
+    . venv/bin/activate
+    pip install --upgrade pip
+}
 
+## Command Aliases
 case "${OSTYPE}" in
     darwin*)
         alias ls='ls -G'
@@ -28,6 +34,5 @@ case "${OSTYPE}" in
 esac
 alias ll='ls -al'
 
-## Command Aliases
 alias vi='nvim'
 alias q='exit'
