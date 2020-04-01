@@ -11,5 +11,7 @@ let g:winresizer_vert_resize = 5
 
 Plug 'AlessandroYorba/Alduin'
 
+Plug 'previm/previm'
+let g:previm_open_cmd = 'open -a Safari'
 call plug#end()
 
