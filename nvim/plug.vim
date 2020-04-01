@@ -6,7 +6,7 @@ endif
 call plug#begin('~/.local/share/nvim/plugged')
 
 Plug 'simeji/winresizer'
-let g:winresizer_horiz_resize = 1
+let g:winresizer_horiz_resize = 2
 let g:winresizer_vert_resize = 5
 
 Plug 'AlessandroYorba/Alduin'
