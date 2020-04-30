@@ -166,3 +166,5 @@ alias q='exit'
 
 alias tree="tree -I \"\$(grep -v '^#' .gitignore|grep -v '^\s*\$'|sed 's#/\$##'|paste -s -d '|' -)\""
 
+## Docker
+alias dc='docker-compose'
