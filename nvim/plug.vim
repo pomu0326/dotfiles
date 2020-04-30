@@ -13,5 +13,9 @@ Plug 'AlessandroYorba/Alduin'
 
 Plug 'previm/previm'
 let g:previm_open_cmd = 'open -a Safari'
-call plug#end()
 
+Plug 'mattn/emmet-vim'
+let g:user_emmet_install_global = 0
+autocmd FileType html,css,php EmmetInstall
+
+call plug#end()
