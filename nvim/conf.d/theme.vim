@@ -1,3 +1,2 @@
 colorscheme alduin
-
 set number
