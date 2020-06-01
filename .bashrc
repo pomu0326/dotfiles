@@ -168,3 +168,6 @@ alias tree="tree -I \"\$(grep -v '^#' .gitignore|grep -v '^\s*\$'|sed 's#/\$##'|
 
 ## Docker
 alias dc='docker-compose'
+
+## Clip alias
+which clip.exe && alias clip=clip.exe
