@@ -70,6 +70,13 @@ if [ -n "$(which pyenv)" ]; then
     }
 fi
 
+## Node(n) Environments
+if [ -n "$(which n)" ]; then
+    if [ -n "$(n which stable)" ]; then
+        export PATH="$(n which stable):$PATH"
+    fi
+fi
+
 ## Command Aliases
 case "${OSTYPE}" in
     darwin*)
