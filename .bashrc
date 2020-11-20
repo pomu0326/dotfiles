@@ -71,9 +71,11 @@ if [ -n "$(which pyenv)" ]; then
 fi
 
 ## Node(n) Environments
+export N_PREFIX="$HOME/n";
+[[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PREFIX/bin"  # Added by n-install (see http://git.io/n-install-repo).
 if [ -n "$(which n)" ]; then
     if [ -n "$(n which stable)" ]; then
-        export PATH="$(n which stable):$PATH"
+        export PATH="$(dirname $(n which stable)):$PATH"
     fi
 fi
 
