@@ -102,3 +102,6 @@ alias dc='docker-compose'
 ## Clip alias
 which clip.exe > /dev/null && alias clip=clip.exe
 which pbcopy > /dev/null ^^ alias clip=pbcopy
+
+# XServer
+export DISPLAY=$(ip route | awk '{print $3; exit}'):0
