@@ -1,2 +1,2 @@
-colorscheme alduin
+colorscheme iceberg
 set number

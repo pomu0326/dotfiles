@@ -105,3 +105,6 @@ which pbcopy > /dev/null ^^ alias clip=pbcopy
 
 # XServer
 export DISPLAY=$(ip route | awk '{print $3; exit}'):0
+
+# Go
+export PATH=$PATH:/usr/local/go/bin

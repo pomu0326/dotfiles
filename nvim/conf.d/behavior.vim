@@ -17,3 +17,7 @@ set hlsearch
 set smartcase
 set incsearch
 set ignorecase
+
+" shell
+set shell=zsh\ -l
+

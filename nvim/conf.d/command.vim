@@ -7,6 +7,7 @@ command! -nargs=0 GitHistory !git l
 command! -nargs=1 GitCommit !git commit -m <f-args>
 "" Make
 command! -nargs=1 Make term make <f-args>
+command! TT tabe term://make test
+command! ET tabe term://make e2etest
 "" UUID4
 command! UUID4 term python -c 'import uuid; print(uuid.uuid4())'
-
